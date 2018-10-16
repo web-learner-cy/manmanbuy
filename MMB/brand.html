@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css//brand.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mmb_header">
+      <a href="javascript:history.go(-1);" class="logo">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      <a href="#" class="appdown">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+    <div class="mmb_search">
+      <input type="text" placeholder="请输入你想比价的内容">
+      <button class="searchBtn">搜索</button>
+    </div>
+    <div class="mmb_brandnav">
+      <div class="sitenav fl">
+          <a href="index.html">首页></a>
+          <a href="category.html">全部分类></a>
+      </div>
+      <div class="select fr">
+        <button class="selectBtn">筛选</button>
+      </div>
+    </div>
+    <div class="mmb_brand">
+      <h3>品牌功能哪个好</h3>
+      <ul class="list">
+        <!-- 坑 -->
+      </ul>
+    </div>
+    <div class="mmb_product">
+      <h3>品牌功能哪个好</h3>
+      <div class="list">
+          <!-- 坑 -->
+      </div>
+    </div>
+    <div class="mmb_comment">
+      <h3>平板电视最新评论</h3>
+        <div class="productCom">
+           
+        </div>
+    </div>
+    <div class="mmb_footer">
+      <div class="btns clearfix">
+        <div class="login">登录</div>
+        <div class="register">注册</div>
+        <div class="backTop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+          <span>返回顶部</span>
+        </div>
+      </div>
+      <p class="first">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <span> -- 掌上比价平台</span>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+ 
+  <!-- 模板 -->
+  <script type="text/html" id="brandlistTmp">
+    {{ each result v i }}
+      <li>
+        <a href="#">
+          <i class="top{{i+1}}">{{i+1}}</i>
+          <div class="inner">
+            <div class="tit">{{v.brandName}}</div>
+            <p>{{v.brandInfo}}</p>
+          </div>
+        </a>
+      </li>
+      {{ /each }}
+  </li>
+  </script>
+
+  <script type="text/html" id="productListTmp">    
+    {{ each result v i }}
+    <div class="item">
+        <a href="#">
+          <div class="pic">
+            {{@v.productImg}}
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="txt-cut-two">{{v.productName}}</p>
+              <span>{{v.productPrice}}</span>
+            </div>
+            <div class="bottom">
+              <span class="fl">{{v.productQuote}} | {{v.productCom}}</span>
+              <span class="fr">{{ v.productComCount }}</span>
+            </div>  
+          </div>
+        </a> 
+      </div>
+    {{ /each }}
+  </script>
+
+  <script type="text/html" id="comTmp">
+    <ul>
+      {{ each result v i }}
+      <li>
+        <a href="#">
+            <div class="tit">
+                <div class="pic">
+                  {{@productImg}}
+                </div>
+                <div class="info">
+                  <div class="top">
+                    <p class="txt-cut-two">{{productName}}</p>
+                  </div>
+                </div>
+            </div>
+            <div class="commentInfo">
+              <div class="top clearfix">
+                <span class="name fl">{{v.comName}}</span>
+                <span class="time fr">{{v.comTime}}</span>
+              </div>
+              <p>{{v.comContent}}</p>
+            </div>
+          </a>
+      </li>
+      {{ /each }}
+    </ul>
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/brand.js"></script>
+</body>
+</html>

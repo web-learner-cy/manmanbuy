@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/discount.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mmb_header">
+      <a href="javascript:history.go(-1);" class="back">
+        <img src="./images/icback.svg" alt="">
+      </a>
+      <h3>国内折扣</h3>
+      <a href="#" class="appdown">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+
+    <div class="mmb_productDetail">
+        
+    </div>
+
+    <div class="go_buy">
+      <button>前往购买</button>
+    </div>
+
+    <div class="mmb_weixin">
+      <img src="./images/mmbweixin2.png" alt="">
+    </div>
+
+    <div class="mmb_comment">
+      
+    </div>
+    <div class="mmb_footer">
+      <div class="btns clearfix">
+        <div class="login">登录</div>
+        <div class="register">注册</div>
+        <div class="backTop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+          <span>返回顶部</span>
+        </div>
+      </div>
+      <p class="first">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <span> -- 掌上比价平台</span>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+  <script type="text/html" id="productDetTmp">    
+    {{ each result v i }}
+    <h3 class="title"> {{v.productName}}</h3>
+    <p class="price">{{ v.productPrice }}</p>
+    <p>
+      <span class="mall">{{v.productFrom}}</span>
+      <span class="addTime">{{v.productTime}}</span>
+      <span class="author">{{v.productTips}}</span>
+    </p>
+     <div class="info clearfix">
+      <div class="pic fr">
+          {{@v.productImg}}
+      </div>
+      <div class="content">
+        <p>{{ v.productInfo }}</p>
+        <p>目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。</p>
+      </div>
+    </div>
+    <div class="bigPic">
+        {{@v.productImg}}
+    </div>
+    <!-- {{@v.productCity}} -->
+    <!-- <ul class="area">
+      <li class="clearfix">
+          <span>北京</span>
+          <span>有货</span>
+      </li>
+    </ul>  -->
+    {{ /each }}
+  </script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/discount.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+.mmb_main {
+  background-color: #f7f7f7;
+}
+.mmb_main .gs_tabs {
+  height: .75rem;
+  background-color: #fff;
+  padding-right: .9rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.mmb_main .gs_tabs ul {
+  border-right: 1px solid #ccc;
+}
+.mmb_main .gs_tabs ul li {
+  float: left;
+  width: 30%;
+  height: .75rem;
+  text-align: center;
+  line-height: .75rem;
+  font-size: .3rem;
+  position: relative;
+}
+.mmb_main .gs_tabs ul li a {
+  display: block;
+}
+.mmb_main .gs_tabs ul li i {
+  position: absolute;
+  top: .23rem;
+  border: .1rem solid transparent;
+  border-bottom-color: #000;
+}
+.mmb_main .gs_tabs .dropdown {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: .75rem;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 1px 1px 1px #ccc;
+}
+.mmb_main .gs_tabs .dropdown li {
+  width: 100%;
+  text-align: left;
+  text-indent: .2rem;
+  border-bottom: 1px solid #ccc;
+}
+.mmb_main .gs_tabs .dropdown.show {
+  display: block;
+}
+.mmb_main .gs_productlist {
+  padding: 0 .2rem;
+}
+.mmb_main .gs_productlist li {
+  float: left;
+  width: 50%;
+  height: 4.5rem;
+  padding-right: .2rem;
+  margin: .2rem 0;
+}
+.mmb_main .gs_productlist li a {
+  height: 100%;
+  display: block;
+  background-color: #fff;
+  padding: 0 .15rem;
+}
+.mmb_main .gs_productlist li a img {
+  height: 3rem;
+}
+.mmb_main .gs_productlist li a .title {
+  font-style: .24rem;
+  margin-top: .4rem;
+}
+.mmb_main .gs_productlist li a .bottom {
+  margin-top: .2rem;
+}
+.mmb_main .gs_productlist li a .bottom .price {
+  font-size: .3rem;
+  color: #f73f24;
+}
+.mmb_main .gs_productlist li a .bottom .link {
+  height: .5rem;
+  width: 1.2rem;
+  line-height: .5rem;
+  text-align: center;
+  background-color: #ff9501;
+  color: #fff;
+  border-radius: 5px;
+}
+.mmb_main .gs_productlist li:nth-child(2n) {
+  padding-right: 0;
+}

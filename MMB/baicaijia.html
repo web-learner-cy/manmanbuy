@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mmb_header">
+      <a href="javascript:history.go(-1);" class="back">
+        <img src="./images/icback.svg" alt="">
+      </a>
+      <h3>白菜价-淘宝内部券</h3>
+      <a href="#" class="appdown">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+    <div class="mmb_tabs">
+      <ul class=" clearfix">
+        
+      </ul>
+    </div>
+
+    <div class="mmb_bcjproductList">
+      
+
+      
+      <!-- 坑 -->
+    </div>
+    <div class="mmb_footer">
+      <div class="btns clearfix">
+        <div class="login">登录</div>
+        <div class="register">注册</div>
+        <div class="backTop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+          <span>返回顶部</span>
+        </div>
+      </div>
+      <p class="first">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <span> -- 掌上比价平台</span>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+  <script type="text/html" id="tapTmp">
+    {{ each result v i}}
+      <li class="{{ i == 0?"current":"" }}" data-titleid="{{ v.titleId }}">
+        <a href="#">{{v.title}}</a>
+      </li> 
+    {{ /each}}
+  </script>
+  <script type="text/html" id="bgjProductList">
+    {{each result v i}}
+    <div class="item">
+      <div class="pic fl">
+        {{@v.productImg}}
+      </div>
+      <div class="info fr">
+        <h3 class="title">
+          {{@v.productName}}
+          <!-- <span>[包邮]</span>  
+          双十一红包 今日开启 -->
+        </h3>
+        <p class="price">
+          {{@v.productPrice}}
+          <!-- <span class="after">券后￥00</span>
+          <span class="before">￥00</span> -->
+        </p>
+        <div class="progress">
+          {{@v.productCouponRemain}}
+          <!-- <span class="pWrapper">
+            <i class="txt">1%</i>
+            <span class="pInfo" style="width:5%;"></span>
+          </span>
+          <span class="coupon">已领113张券</span> -->
+        </div>
+        <div class="bottom">
+          {{@v.productCoupon}}
+          {{@v.productHref}}
+          <!-- <a class="getcoupon fl">点此领15元优惠券</a>
+          <a class="link fr">下单链接</a> -->
+        </div>
+      </div>
+    </div>
+      {{ /each }}
+  </script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./lib/iscroll/iscroll.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/baicaijia.js"></script>
+</body>
+</html>

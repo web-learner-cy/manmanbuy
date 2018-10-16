@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/moneyCtr.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mmb_header">
+      <a href="index.html" class="back">
+        <img src="./images/icback.svg" alt="">
+      </a>
+      <h3>省钱控 - 最新优惠</h3>
+      <a href="#" class="appdown">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+
+    <div class="mmb_monCtrList">
+        <!-- 坑 -->
+    </div>
+
+    <div class="mmb_page clearfix">
+      <span>
+        <a href="javascript:;" id="next">上一页</a>
+      </span>
+      <span>
+        <select name="" id="select">
+         
+        </select> 
+      </span>
+      <span>
+        <a href="javascript:;" id="prev">下一页</a>
+      </span>  
+    </div>
+
+    <div class="mmb_footer">
+      <div class="btns clearfix">
+        <div class="login">登录</div>
+        <div class="register">注册</div>
+        <div class="backTop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+          <span>返回顶部</span>
+        </div>
+      </div>
+      <p class="first">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <span> -- 掌上比价平台</span>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+  <script type="text/html" id="monCtrTmp">    
+    {{ each result v i }}
+    <div class="item">
+        <a href="moneyproduct.html?productId={{ v.productId }}">
+          <div class="pic">
+            {{@v.productImg2}}
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="txt-cut-two">{{v.productInfo2}}</p>
+              <span>{{v.productPinkage}}</span>
+            </div>
+            <div class="bottom">
+              <span class="fl">{{v.productFrom}} | {{v.productTime}}</span>
+              <span class="fr">{{ v.productComCount }}</span>
+            </div>  
+          </div>
+        </a> 
+      </div>
+    {{ /each }}
+  </script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/moneyCtr.js"></script>
+</body>
+</html>

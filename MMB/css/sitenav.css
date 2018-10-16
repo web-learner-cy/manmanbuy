@@ -1,0 +1,18 @@
+.mmb_main {
+  padding: .2rem .8rem;
+}
+.mmb_main .wrapper .item {
+  float: left;
+  padding: .3rem .15rem;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  font-size: .3rem;
+  margin-right: .1rem;
+  margin-bottom: .1rem;
+}
+.mmb_main .wrapper .item img {
+  width: .35rem;
+  height: .35rem;
+  display: inline-block;
+  margin-right: .3rem;
+}

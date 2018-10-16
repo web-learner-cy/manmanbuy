@@ -1,0 +1,133 @@
+.mmb_productDetail {
+  padding: 0 .1rem;
+}
+.mmb_productDetail .title {
+  font-size: .4rem;
+  margin: .2rem 0;
+}
+.mmb_productDetail p {
+  color: #999999;
+}
+.mmb_productDetail p span {
+  margin: 0 4px;
+}
+.mmb_productDetail .price {
+  color: #ff4b0f;
+  margin-bottom: .3rem;
+}
+.mmb_productDetail .info {
+  margin-top: .2rem;
+}
+.mmb_productDetail .info .pic {
+  width: 2.1rem;
+  height: 2.65rem;
+}
+.mmb_productDetail .info .content p {
+  font-size: .25rem;
+  line-height: .4rem;
+}
+.mmb_productDetail .bigPic {
+  margin-top: .15rem;
+}
+.mmb_productDetail .bigPic img {
+  width: 4rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+.mmb_productDetail #disstorck {
+  width: 2.7rem;
+  box-shadow: 0 1px 2px 2px #ccc;
+  padding: 0 .2rem .15rem;
+  margin: .3rem auto 0;
+  border-radius: 3px;
+  line-height: .45rem;
+}
+.mmb_productDetail #disstorck li {
+  border-bottom: 1px dashed #ccc;
+  padding: 0 .2rem;
+}
+.mmb_productDetail #disstorck li strong {
+  float: right;
+  color: #f18b4e;
+}
+.go_buy {
+  padding: .4rem;
+}
+.go_buy button {
+  width: 100%;
+  line-height: .6rem;
+  background-color: #ff9000;
+  font-size: .4rem;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.mmb_weixin {
+  padding: 0 .2rem;
+}
+.mmb_comment {
+  padding: 0 .2rem;
+}
+.mmb_comment .tit {
+  line-height: .8rem;
+  font-size: .3rem;
+}
+.mmb_comment .reply {
+  position: relative;
+}
+.mmb_comment .reply .form {
+  border: 1px solid #ccc;
+}
+.mmb_comment .reply textarea {
+  width: 100%;
+  height: 1.5rem;
+  resize: none;
+  font-size: .3rem;
+  text-indent: 10px;
+  border: none;
+}
+.mmb_comment .reply .ctrl {
+  text-align: right;
+  background-color: #fbfbfb;
+  font-size: none;
+}
+.mmb_comment .reply .ctrl input {
+  width: 2rem;
+  height: .75rem;
+  background-color: #ff9000;
+  color: #fff;
+  font-size: .3rem;
+  border: none;
+}
+.mmb_comment .list .ui-border-b {
+  height: 1.4rem;
+  padding: .3rem;
+  overflow: hidden;
+}
+.mmb_comment .list .ui-border-b .userimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.mmb_comment .list .ui-border-b .con {
+  padding-left: .2rem;
+  overflow: hidden;
+  font-size: .2rem;
+}
+.mmb_comment .list .ui-border-b .con .username {
+  float: left;
+  color: #5095cd;
+}
+.mmb_comment .list .ui-border-b .con .time {
+  float: right;
+}
+.mmb_comment .list .ui-border-b .con .content {
+  margin-top: .2rem;
+  line-height: .3rem;
+}
+.mmb_comment .list .ui-border-b .con .content img {
+  width: .22rem;
+  height: .22rem;
+}

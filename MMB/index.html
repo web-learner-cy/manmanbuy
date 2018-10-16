@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css//index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mmb_header">
+      <a href="index.html" class="logo">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      <a href="#" class="appdown">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+    <div class="mmb_search">
+      <input type="text" placeholder="请输入你想比价的内容">
+      <button class="searchBtn">搜索</button>
+    </div>
+    <div class="mmb_nav">
+      <ul class="clearfix">
+        <!-- 坑 -->
+        
+      </ul>
+    </div>
+    <div class="mmb_recommd">
+        <div class="title clearfix">
+            <span class="fl">超值折扣推荐</span>
+            <img class="fr" src="http://www.zuyushop.com/wap/images/more.png" height="30" width="30" alt="">
+          </div>
+          <div class="content">
+            <!-- 坑 -->
+          </div>
+    </div>
+    <div class="mmb_more">
+      <button class="moreBtn">更多优惠信息>></button>
+    </div>
+
+    <div class="mmb_brandsort">
+        <div class="title clearfix">
+          <span class="fl">品牌排行</span>
+          <img class="fr" src="http://www.zuyushop.com/wap/images/more.png" height="30" width="30" alt="">
+        </div>
+    </div>
+
+    <div class="mmb_footer">
+      <div class="btns clearfix">
+        <div class="login">登录</div>
+        <div class="register">注册</div>
+        <div class="backTop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+          <span>返回顶部</span>
+        </div>
+      </div>
+      <p class="first">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <span> -- 掌上比价平台</span>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+  <!-- 导航模板 -->
+  <script type="text/html" id="navTmp">
+    {{ each result v i}}
+    <li class="item">
+        <a href="{{ v.titlehref }}">
+          {{@ v.img }}
+          <!-- <img src="./images/ic_search.png" alt=""> -->
+          <p>{{ v.name }}</p>
+        </a>
+      </li>
+    {{ /each }}
+  </script>
+
+  <script type="text/html" id="recommdTmp">    
+    {{ each result v i }}
+    <div class="item">
+        <a href="detail.html/product={{ v.productId }}">
+          <div class="pic">
+            {{@v.productImg2}}
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="txt-cut-two">{{v.productInfo1}}</p>
+              <span>{{v.productPinkage}}</span>
+            </div>
+            <div class="bottom">
+              <span class="fl">{{v.productFrom}} | {{v.productTime}}</span>
+              <span class="fr">{{ v.productComCount }}</span>
+            </div>  
+          </div>
+        </a> 
+      </div>
+    {{ /each }}
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

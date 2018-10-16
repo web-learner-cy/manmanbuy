@@ -1,0 +1,28 @@
+.mmb_category .item .title {
+  display: block;
+  height: .8rem;
+  line-height: .8rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 .3rem;
+  font-size: .3rem;
+  font-weight: 700;
+  background: #ededed url('http://www.zuyushop.com/wap/images/arrow1.gif') no-repeat right;
+}
+.mmb_category .item .content li {
+  float: left;
+  width: 33.3%;
+  height: .8rem;
+  text-align: center;
+  line-height: .8rem;
+  font-size: .26rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.mmb_category .item .content li a {
+  display: block;
+}
+.mmb_category .item .content li:nth-child(3n) {
+  border-right: none;
+}

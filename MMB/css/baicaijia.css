@@ -1,0 +1,115 @@
+.mmb_header {
+  background-color: #f4483e;
+}
+.container {
+  background-color: #f7f7f7;
+}
+.mmb_tabs {
+  width: 100%;
+  height: .8rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+.mmb_tabs ul {
+  width: 15rem;
+}
+.mmb_tabs li {
+  float: left;
+  line-height: .7rem;
+  padding: 0 .25rem;
+}
+.mmb_tabs li a {
+  display: block;
+  font-size: .24rem;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+.mmb_tabs li.current a {
+  border-color: #e22f32;
+}
+.mmb_bcjproductList .item {
+  height: 3rem;
+  background-color: #fff;
+  margin-top: .1rem;
+  padding: .2rem .1rem;
+}
+.mmb_bcjproductList .item .pic {
+  width: 40%;
+  height: 100%;
+}
+.mmb_bcjproductList .item .info {
+  width: 60%;
+  height: 100%;
+  padding-left: .1rem;
+}
+.mmb_bcjproductList .item .info .title {
+  font-size: .3rem;
+  line-height: .5rem;
+}
+.mmb_bcjproductList .item .info .price {
+  line-height: .5rem;
+  margin-top: .2rem;
+  color: #fc3a6c;
+  font-size: .4rem;
+}
+.mmb_bcjproductList .item .info .price i {
+  margin-right: .1rem;
+  font-size: .3rem;
+}
+.mmb_bcjproductList .item .info .price em {
+  font-size: .2rem;
+}
+.mmb_bcjproductList .item .info .price del {
+  color: #a0a8af;
+  font-size: .2rem;
+  margin-left: .2rem;
+}
+.mmb_bcjproductList .item .info .progress .bar i {
+  display: inline-block;
+  width: 1.7rem;
+  height: .3rem;
+  background-color: #ffb7b7;
+  border: 1px solid #fc353a;
+  border-radius: .15rem;
+  overflow: hidden;
+  position: relative;
+}
+.mmb_bcjproductList .item .info .progress .bar i span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mmb_bcjproductList .item .info .progress .bar i em {
+  height: 100%;
+  display: inline-block;
+  background-color: #fc353a;
+}
+.mmb_bcjproductList .item .info .progress .bar b {
+  font-size: .3rem;
+  color: #fc353a;
+  margin-left: .3rem;
+  position: relative;
+  top: -0.04rem;
+}
+.mmb_bcjproductList .item .info .bottom {
+  margin-top: .15rem;
+  font-size: .24rem;
+  text-align: center;
+  line-height: .5rem;
+}
+.mmb_bcjproductList .item .info .bottom a:first-child {
+  width: 2.14rem;
+  height: .5rem;
+  border: 1px dashed #ff5e5d;
+  color: #ff5e5d;
+  float: left;
+}
+.mmb_bcjproductList .item .info .bottom a:nth-child(2) {
+  width: 1.6rem;
+  height: .5rem;
+  background-color: #ff5e5d;
+  color: #fff;
+  border-radius: 5px;
+  float: right;
+}

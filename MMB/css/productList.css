@@ -1,0 +1,50 @@
+/* 面包屑导航*/
+.mmb_brandnav {
+  height: .7rem;
+  background-image: linear-gradient(to bottom, #ffffff, #ededed);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0 .15rem;
+  line-height: .7rem;
+  font-size: .24rem;
+}
+.mmb_brandnav .selectBtn {
+  font-size: .24rem;
+  width: 1.25rem;
+  height: .55rem;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #ededed, #ffffff);
+}
+.mmb_products a {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding: .15rem .15rem;
+}
+.mmb_products a .pic {
+  float: left;
+  width: 1rem;
+  padding: 0 .15px;
+  height: 1rem;
+}
+.mmb_products a .pic img {
+  width: 1rem;
+  margin: 0 auto;
+}
+.mmb_products a .info {
+  overflow: hidden;
+  height: 100%;
+  font-size: .2rem;
+  padding-left: .2rem;
+}
+.mmb_products a .info p {
+  line-height: .2rem;
+}
+.mmb_products a .info .price {
+  color: red;
+  line-height: .3rem;
+}
+.mmb_products a .info .comment {
+  margin-top: .2rem;
+  color: #989bb3;
+  font-size: .16rem;
+}
